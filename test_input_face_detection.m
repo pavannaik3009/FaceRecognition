@@ -1,6 +1,6 @@
 % clear ; 
 clc
-input=imread('2.jpg'); %test image here
+input=imread('5.jpg'); %test image here
 imshow(input);title('test');figure;
 input=imgaussfilt(input);
 [n,m]=size(input(:,:,1));
@@ -35,7 +35,7 @@ clear bbox
 facedetect=vision.CascadeObjectDetector('FrontalFaceCART','MinSize',[100,100],'MergeThreshold',9);
 faces_2=zeros(150,150,3,size(faces_1,4));
 
-pnames = ["Deep" "Dhruvi" "Harshul" "Kishan" "Nikhil" "Suprit";
+pnames = ["Pavan" "Divya" "Aayushi" "Durga" "Ayaan" "Yazhini";
          "Absent" "Absent" "Absent" "Absent" "Absent" "Absent"];
 
 new_face_location=[0 0 0 0];
